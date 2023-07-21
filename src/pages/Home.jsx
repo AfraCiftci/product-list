@@ -12,7 +12,9 @@ const Home = () => {
     }
     console.log(products);
   return (
-    <div>Home</div>
+    <div>
+        <Header/>
+    </div>
   )
 }
 export default Home;
