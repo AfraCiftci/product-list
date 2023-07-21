@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 
 const Header = () => {
 
@@ -11,7 +11,7 @@ const Header = () => {
       ]);
   return (
     <div className='top-div'>
-      
+      <h1 className='product-h1 text-center mt-5'>Product List</h1>
     </div>
   )
 }
