@@ -5,5 +5,17 @@
 }
 
 body{
-  
+  background-color: #F3D9E4;
+}
+
+.product-h1{
+    color: #CD890C ;
+    margin-top: 100px;
+}
+
+.links{
+    list-style: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 15px;
 }

@@ -22,8 +22,8 @@ const Header = () => {
 
   return (
     <div className='top-div'>
-        <h1 className='product-h1 text-center mt-5'>Product Lists</h1>
-        <ul>
+        <h1 className='product-h1 text-center'>Product Lists</h1>
+        <ul className='d-flex gap-4 justify-content-center mt-3'>
             {
                 items.map((item) =>
                 (
