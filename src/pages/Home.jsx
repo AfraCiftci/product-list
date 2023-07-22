@@ -23,17 +23,26 @@ const Home = () => {
     <Header/>
     <div className='products'>
 
-      <Row>
-        {
-          products?.filter((product)) => {
-            if(selectedItem== "all"){
-              return product;
-            }else{
-              return product.category==selectedItem.toLowerCase();
-            }
-          })
-        }
+    <Row>
+      {
+        products?.filter((product) =>{
+          if(selectedItem.toLowerCase()=="all"){
+            return product;
+          }else{
+            return product.category==selectedItem.toLowerCase();
+          }
+        }).map(product => {
+          return <ProductCard key={product.id} {...product}/>
+        })
+      }
       </Row>
+
+
+
+
+
+
+
     </div>
     </div>
   )
