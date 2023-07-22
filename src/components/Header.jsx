@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div className='top-div'>
         <h1 className='product-h1 text-center'>Product Lists</h1>
-        <ul className='d-flex gap-4 justify-content-center mt-3'>
+        <ul className='d-flex flex-sm-row flex-column gap-4 justify-content-center mt-3'>
             {
                 items.map((item) =>
                 (
