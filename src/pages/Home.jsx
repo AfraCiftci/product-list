@@ -25,7 +25,13 @@ const Home = () => {
 
       <Row>
         {
-          
+          products?.filter((product)) => {
+            if(selectedItem== "all"){
+              return product;
+            }else{
+              return product.category==selectedItem.toLowerCase();
+            }
+          })
         }
       </Row>
     </div>
