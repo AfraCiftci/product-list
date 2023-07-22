@@ -1,6 +1,7 @@
 import React, { useState , useEffect} from 'react'
 import axios from "axios"
 import Header from '../components/Header';
+import { Row } from 'react-bootstrap';
 const Home = () => {
 
     const [products, setProducts] = useState();
@@ -20,6 +21,14 @@ const Home = () => {
   return (
     <div>
     <Header/>
+    <div className='products'>
+
+      <Row>
+        {
+          
+        }
+      </Row>
+    </div>
     </div>
   )
 }
