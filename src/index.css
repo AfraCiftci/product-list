@@ -5,11 +5,11 @@
 }
 
 body{
-  background-color: #F3D9E4;
+  background-color: #bebe;
 }
 
 .product-h1{
-    color: #CD890C;
+    color: #000000;
     font-weight: bold;
     margin-top: 100px;
 }
@@ -27,11 +27,11 @@ body{
 }
 
 .links:hover{
-    background-color: #FF4500;
+    background-color: #dede;
 }
 
 .links-clicked{
-    background-color:#c5963e;
+    background-color:#db0618fb;
 }
 
 .card{
