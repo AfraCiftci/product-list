@@ -2,7 +2,9 @@ import React, { useState , useEffect} from 'react'
 import axios from "axios"
 import Header from '../components/Header';
 import { Row } from 'react-bootstrap';
+import ProductCard from '../components/ProductCard';
 const Home = () => {
+    const [selectedItem, setselectedItem] = useState("all");
 
     const [products, setProducts] = useState();
 
@@ -20,12 +22,13 @@ const Home = () => {
 
   return (
     <div>
-    <Header/>
-    <div className='products'>
+    <Header setselectedItem={setselectedItem}/>
+    <div className='products container'>
 
-    <Row>
-      {
+      <Row >
+      { 
         products?.filter((product) =>{
+        
           if(selectedItem.toLowerCase()=="all"){
             return product;
           }else{
@@ -34,15 +37,9 @@ const Home = () => {
         }).map(product => {
           return <ProductCard key={product.id} {...product}/>
         })
+
       }
       </Row>
-
-
-
-
-
-
-
     </div>
     </div>
   )
