@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
-const Header = () => {
+const Header = ({setselectedItem}) => {
 
+    
     const [items, setItems] = useState([
         { id: 1, text: "ALL", class: 'links links-clicked' },
         { id: 2, text: "ELECTRONICS", class: 'links ' },
@@ -13,6 +14,10 @@ const Header = () => {
     const handleToggle = (itemId)=>{
         setItems( items.map(item =>{
 
+            if(item.id === itemId){
+                setselectedItem(item.text);
+            }
+            
             return itemId===item.id
             ?{...item,class: 'links links-clicked'}
             : {...item, class: 'links'}
